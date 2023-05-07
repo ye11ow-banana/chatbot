@@ -8,7 +8,19 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 langchain = "^0.0.161"
+django = "^4.2.1"
+openai = "^0.27.6"
+python-decouple = "^3.8"
+django-debug-toolbar = "^4.0.0"
+channels = "^4.0.0"
+chromadb = "^0.3.21"
 
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.2.0"
+django-stubs = "^4.2.0"
+djangorestframework-stubs = "^3.14.0"
+black = "^23.3.0"
 
 [build-system]
 requires = ["poetry-core"]
