@@ -8,12 +8,12 @@
 </head>
 <body>
 <div class="wrapper">
-  <h2>Chat title: {{ chat.title }}</h2>
+  <h2>Chat title: {{ chat_title}}</h2>
   <div class="chat">
     {% for message in messages %}
-      {% if message.sender is not None %}
+      {% if message.sender_username is not None %}
         <p class="msg msg-user">
-          <span class="sender">{{ message.sender }}:</span>
+          <span class="sender">{{ message.sender_username }}:</span>
           {{ message.text }}
           <span class="date">{{ message.created }}</span>
         </p>
