@@ -8,3 +8,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns.append(path("admin/", admin.site.urls))
+    urlpatterns.append(path("__debug__/", include("debug_toolbar.urls")))
