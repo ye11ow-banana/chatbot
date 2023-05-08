@@ -14,8 +14,12 @@ class Chat(models.Model):
         verbose_name="Owner of a chat",
     )
     title = models.CharField("Chat title", max_length=255)
-    created = models.DateTimeField("Chat creation date and time", auto_now_add=True)
-    updated = models.DateTimeField("Chat last update date and time", auto_now_add=True)
+    created = models.DateTimeField(
+        "Chat creation date and time", auto_now_add=True
+    )
+    updated = models.DateTimeField(
+        "Chat last update date and time", auto_now_add=True
+    )
 
     class Meta:
         db_table = "chat"
@@ -44,7 +48,9 @@ class Message(models.Model):
         verbose_name="Chat a message belongs to",
     )
     text = models.CharField("Message text", max_length=4096)
-    created = models.DateTimeField("Message creation date and time", auto_now_add=True)
+    created = models.DateTimeField(
+        "Message creation date and time", auto_now_add=True
+    )
 
     class Meta:
         db_table = "message"

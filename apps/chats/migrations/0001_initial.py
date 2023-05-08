@@ -25,17 +25,24 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("title", models.CharField(max_length=255, verbose_name="Chat title")),
+                (
+                    "title",
+                    models.CharField(
+                        max_length=255, verbose_name="Chat title"
+                    ),
+                ),
                 (
                     "created",
                     models.DateTimeField(
-                        auto_now_add=True, verbose_name="Chat creation date and time"
+                        auto_now_add=True,
+                        verbose_name="Chat creation date and time",
                     ),
                 ),
                 (
                     "updated",
                     models.DateTimeField(
-                        auto_now_add=True, verbose_name="Chat last update date and time"
+                        auto_now_add=True,
+                        verbose_name="Chat last update date and time",
                     ),
                 ),
                 (
@@ -66,12 +73,15 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "text",
-                    models.CharField(max_length=4096, verbose_name="Message text"),
+                    models.CharField(
+                        max_length=4096, verbose_name="Message text"
+                    ),
                 ),
                 (
                     "created",
                     models.DateTimeField(
-                        auto_now_add=True, verbose_name="Message creation date and time"
+                        auto_now_add=True,
+                        verbose_name="Message creation date and time",
                     ),
                 ),
                 (
