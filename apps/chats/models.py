@@ -21,7 +21,7 @@ class Chat(models.Model):
         db_table = "chat"
 
     def __str__(self) -> str:
-        return f"Chat: {self.pk}"
+        return f"Chat: {self.title}"
 
 
 class Message(models.Model):
