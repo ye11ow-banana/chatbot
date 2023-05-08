@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat detail</title>
+  <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+</head>
+<body>
+<div class="wrapper">
+  <h2>Chat title: {{ chat.title }}</h2>
+  <div class="chat">
+    {% for message in messages %}
+      {% if message.sender is not None %}
+        <p class="msg msg-user">
+          <span class="sender">{{ message.sender }}:</span>
+          {{ message.text }}
+          <span class="date">{{ message.created }}</span>
+        </p>
+      {% else %}
+        <p class="msg msg-ai">
+          <span class="sender">AI assistant:</span>
+          {{ message.text }}
+          <span class="date">{{ message.created }}</span>
+        </p>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="message-sending">
+    <input type="text">
+    <button>Send</button>
+  </div>
+</div>
+</body>
+</html>

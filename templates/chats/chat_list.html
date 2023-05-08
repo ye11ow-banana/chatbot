@@ -7,7 +7,7 @@
 <body>
 <ul>
 {% for chat in chats %}
-  <li><a href="{% url 'chat_detail' chat.id %}">{{ chat.title }}</li>
+  <li><a href="{% url 'chat_messages' chat.id %}">{{ chat.title }}</li>
 {% endfor %}
 </ul>
 </body>
