@@ -3,7 +3,7 @@ from typing import Any
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView
 
-from . import services
+from .services import repository
 from .models import Chat, Message
 
 
@@ -19,12 +19,18 @@ class ChatMessagesView(LoginRequiredMixin, ListView):
 
     def get_queryset(self) -> list[Message]:
         chat_pk = self.kwargs["pk"]
-        return list(services.get_chat_messages(chat_pk))
+        return list(repository.get_chat_messages(chat_pk))
 
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
+        chat_pk = self.kwargs['pk']
         messages = context["messages"]
-        context["chat_title"] = messages[0].chat_title
+        try:
+            chat_title = messages[0].chat_title
+        except IndexError:
+            chat_title = repository.get_chat_title(chat_pk)
+        context["chat_title"] = chat_title
+        context["chat_pk"] = chat_pk
         return context
 
 
