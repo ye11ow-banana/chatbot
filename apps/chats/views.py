@@ -23,7 +23,7 @@ class ChatMessagesView(LoginRequiredMixin, ListView):
 
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
-        chat_pk = self.kwargs['pk']
+        chat_pk = self.kwargs["pk"]
         messages = context["messages"]
         try:
             chat_title = messages[0].chat_title

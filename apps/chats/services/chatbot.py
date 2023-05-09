@@ -6,12 +6,11 @@ from langchain.vectorstores import Chroma
 
 from django.conf import settings
 
-OPENAI_API_KEY = config('OPENAI_API_KEY')
+OPENAI_API_KEY = config("OPENAI_API_KEY")
 CHROMADB_DIR = settings.CHROMADB_DIR
 
 
 class ChromaDB:
-
     def __init__(self, collection_name: str) -> None:
         self._collection_name = collection_name
         self._chroma = self._get_chroma_instance()
@@ -31,7 +30,6 @@ class ChromaDB:
 
 
 class ChatBot:
-
     def __init__(self) -> None:
         self._template = """The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context.
 
@@ -48,7 +46,6 @@ class ChatBot:
 
 
 class HistoryChatBot(ChatBot, ChromaDB):
-
     def __init__(self, collection_name: str) -> None:
         ChatBot.__init__(self)
         ChromaDB.__init__(self, collection_name)
@@ -71,4 +68,4 @@ class HistoryChatBot(ChatBot, ChromaDB):
             condense_question_prompt=self.prompt,
         )
         result = qa({"question": question, "chat_history": []})
-        return result["answer"]
+        return str(result["answer"])

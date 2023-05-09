@@ -19,9 +19,11 @@ def bulk_create_messages(messages: tuple[tuple, ...]) -> None:
     message_instances = []
     for message in messages:
         sender_id, chat_id, text = message
-        message_instances.append(Message(
-            sender_id=sender_id,
-            chat_id=chat_id,
-            text=text,
-        ))
+        message_instances.append(
+            Message(
+                sender_id=sender_id,
+                chat_id=chat_id,
+                text=text,
+            )
+        )
     Message.objects.bulk_create(message_instances)

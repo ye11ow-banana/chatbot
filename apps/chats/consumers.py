@@ -6,7 +6,6 @@ from chats.services import chatbot, repository
 
 
 class ChatConsumer(WebsocketConsumer):
-
     def connect(self):
         self.accept()
 
