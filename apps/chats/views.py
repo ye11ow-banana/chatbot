@@ -1,6 +1,7 @@
 from typing import Any
 
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import QuerySet
 from django.views.generic import ListView
 
 from .permissions import ChatOwnerRequired
@@ -9,9 +10,12 @@ from .models import Chat, Message
 
 
 class ChatListView(LoginRequiredMixin, ListView):
-    queryset = Chat.objects.all()
     context_object_name = "chats"
     template_name = "chats/chat_list.html"
+
+    def get_queryset(self) -> QuerySet[Chat]:
+        user_id = self.request.user.id
+        return repository.get_user_chats(user_id)
 
 
 class ChatMessagesView(LoginRequiredMixin, ChatOwnerRequired, ListView):

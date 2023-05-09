@@ -46,3 +46,7 @@ def set_chat_last_update(
     if update_datetime is None:
         update_datetime = datetime.now()
     Chat.objects.filter(id=chat_id).update(updated=update_datetime)
+
+
+def get_user_chats(user_id: int) -> QuerySet[Chat]:
+    return Chat.objects.filter(owner_id=user_id).only("title")
