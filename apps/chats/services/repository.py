@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db.models import QuerySet, F
 
 from chats.models import Chat, Message
@@ -31,3 +33,16 @@ def bulk_create_messages(messages: tuple[tuple, ...]) -> None:
 
 def check_user_has_chat(user_id: str, chat_id: str) -> bool:
     return Chat.objects.filter(id=chat_id, owner_id=user_id).exists()
+
+
+def set_chat_last_update(
+    chat_id: str, update_datetime: datetime = None
+) -> None:
+    """
+    Update `updated` field of a `Chat` object.
+
+    Is needed after creating new message in a chat.
+    """
+    if update_datetime is None:
+        update_datetime = datetime.now()
+    Chat.objects.filter(id=chat_id).update(updated=update_datetime)

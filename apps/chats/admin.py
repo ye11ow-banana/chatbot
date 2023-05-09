@@ -11,10 +11,11 @@ class MessageInline(admin.TabularInline):
 
 @admin.register(Chat)
 class ChatAdmin(admin.ModelAdmin):
-    list_display = ("id", "title", "created", "updated")
+    list_display = ("id", "owner", "title", "created", "updated")
     list_display_links = ("id", "title")
     list_filter = ("created", "updated")
     search_fields = ("id", "title")
+    readonly_fields = ("created", "updated")
     save_on_top = True
     save_as = True
     inlines = [

@@ -18,7 +18,7 @@ class Chat(models.Model):
         "Chat creation date and time", auto_now_add=True
     )
     updated = models.DateTimeField(
-        "Chat last update date and time", auto_now_add=True
+        "Chat last update date and time", auto_now=True
     )
 
     class Meta:
