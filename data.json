@@ -1,0 +1,655 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-05-09T05:12:25.339Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Chat: Chat 1 (admin)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-05-09T05:12:34.535Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Chat: Chat 2 (admin)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-05-09T05:12:46.401Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Chat: Chat 3 (john)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add chat",
+    "content_type": 7,
+    "codename": "add_chat"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change chat",
+    "content_type": 7,
+    "codename": "change_chat"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete chat",
+    "content_type": 7,
+    "codename": "delete_chat"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view chat",
+    "content_type": 7,
+    "codename": "view_chat"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add message",
+    "content_type": 8,
+    "codename": "add_message"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change message",
+    "content_type": 8,
+    "codename": "change_message"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete message",
+    "content_type": 8,
+    "codename": "delete_message"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view message",
+    "content_type": 8,
+    "codename": "view_message"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$vEiVHCwEA56o2M4RmGodGs$tzfQTbFF2pQBO+zBHr0XOz+gt8Q6CoO12OhEPg75MLM=",
+    "last_login": "2023-05-09T05:12:08.844Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-05-09T05:11:39.828Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$6QX7e07KtzV1ulRcPDMto8$urqlZm4CEJz60pncUYdizQa4kE9xoKfPm8whDJ89Tck=",
+    "last_login": "2023-05-09T05:15:48.238Z",
+    "is_superuser": true,
+    "username": "john",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-05-09T05:11:54.711Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "chats",
+    "model": "chat"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "chats",
+    "model": "message"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1f51q1kb8jsgqn2cam63p3ok7m3qmn01",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9OEQtuLS_d-A7lPixpIKKyM_64kLHR7Zua83IDbWoat6jKM4s4uuNPvRsgPnXYgd5xus-d5WpeR_K74g1Z_nUWfl8P9OyhYy7duYsY-ibQWWwKIYMDRjGOGTE0wSawdNpIoq5IZBdDIAAkQsO_YvT_9ZTjy:1pwFhU:9ImtjhjFxAHU2_ubuc9VFwjbHYNDwiZ7wXTBKjNo47A",
+    "expire_date": "2023-05-23T05:15:48.254Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gz40letoz458w46labozy0xgvg5d4a03",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8mbp07zeQAQapGkhKuzL-uzbpQrf3nHNfLOC21rANWsKc2ZlJdvrdIqYHtR3kO7Zb56m3dZkj3xV-0MGvPdPzcrh_BxVH_dZWCdAFSolyijqBtQ4NFAeAJSvnEMkUQpOlt8oJ4SbltfcSoiZDCtn7A9zjN4M:1pwFdw:i05QoZ6aYXRuETnKg_ceNAJOfE-WQU61G6xNpyp4GC8",
+    "expire_date": "2023-05-23T05:12:08.860Z"
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "title": "Chat 1 (admin)",
+    "created": "2023-05-09T05:12:25.337Z",
+    "updated": "2023-05-09T05:12:25.337Z"
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "title": "Chat 2 (admin)",
+    "created": "2023-05-09T05:12:34.534Z",
+    "updated": "2023-05-09T05:12:34.534Z"
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 3,
+  "fields": {
+    "owner": 2,
+    "title": "Chat 3 (john)",
+    "created": "2023-05-09T05:12:46.399Z",
+    "updated": "2023-05-09T05:12:46.399Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 1,
+  "fields": {
+    "sender": 1,
+    "chat": 1,
+    "text": "Hello, my dear!",
+    "created": "2023-05-09T05:13:26.261Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 2,
+  "fields": {
+    "sender": null,
+    "chat": 1,
+    "text": " Hi there! How can I help you?",
+    "created": "2023-05-09T05:13:26.261Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 3,
+  "fields": {
+    "sender": 1,
+    "chat": 1,
+    "text": "Can you name 3 countries?",
+    "created": "2023-05-09T05:13:31.741Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 4,
+  "fields": {
+    "sender": null,
+    "chat": 1,
+    "text": "\n\nYes, three countries are the United States, Canada, and Mexico.",
+    "created": "2023-05-09T05:13:31.741Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 5,
+  "fields": {
+    "sender": 1,
+    "chat": 1,
+    "text": "And capitals?",
+    "created": "2023-05-09T05:13:41.982Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 6,
+  "fields": {
+    "sender": null,
+    "chat": 1,
+    "text": " The capitals of the United States, Canada, and Mexico are Washington D.C., Ottawa, and Mexico City, respectively.",
+    "created": "2023-05-09T05:13:41.982Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 7,
+  "fields": {
+    "sender": 1,
+    "chat": 2,
+    "text": "Hello, my dear!",
+    "created": "2023-05-09T05:14:27.544Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 8,
+  "fields": {
+    "sender": null,
+    "chat": 2,
+    "text": " Hi there! How can I help you?",
+    "created": "2023-05-09T05:14:27.544Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 9,
+  "fields": {
+    "sender": 1,
+    "chat": 2,
+    "text": "And capitals?",
+    "created": "2023-05-09T05:14:35.322Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 10,
+  "fields": {
+    "sender": null,
+    "chat": 2,
+    "text": " I'm sorry, I don't know. Could you please provide more context so I can better understand your question?",
+    "created": "2023-05-09T05:14:35.322Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 11,
+  "fields": {
+    "sender": 1,
+    "chat": 2,
+    "text": "Say capitals",
+    "created": "2023-05-09T05:15:21.857Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 12,
+  "fields": {
+    "sender": null,
+    "chat": 2,
+    "text": " The capitals of the United States, Canada, and Mexico are Washington D.C., Ottawa, and Mexico City, respectively.",
+    "created": "2023-05-09T05:15:21.857Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 13,
+  "fields": {
+    "sender": 2,
+    "chat": 3,
+    "text": "Hello, my dear!",
+    "created": "2023-05-09T05:16:00.754Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 14,
+  "fields": {
+    "sender": null,
+    "chat": 3,
+    "text": " Hi there! How can I help you?",
+    "created": "2023-05-09T05:16:00.754Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 15,
+  "fields": {
+    "sender": 2,
+    "chat": 3,
+    "text": "Say capitals",
+    "created": "2023-05-09T05:16:12.915Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 16,
+  "fields": {
+    "sender": null,
+    "chat": 3,
+    "text": " I'm sorry, I don't know.",
+    "created": "2023-05-09T05:16:12.915Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 17,
+  "fields": {
+    "sender": 2,
+    "chat": 3,
+    "text": "Good job!",
+    "created": "2023-05-09T05:16:20.704Z"
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 18,
+  "fields": {
+    "sender": null,
+    "chat": 3,
+    "text": " Thank you!",
+    "created": "2023-05-09T05:16:20.704Z"
+  }
+}
+]

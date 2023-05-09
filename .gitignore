@@ -129,6 +129,3 @@ dump.rdb
 # PyCharm
 .idea/
 .DS_Store
-
-# Chroma
-chroma_db
