@@ -1,4 +1,4 @@
-**Social Network**
+**AI Assistant**
 
 ### Short description
 This is chatbot application created with
