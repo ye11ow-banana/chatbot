@@ -26,6 +26,11 @@ OPENAI_API_KEY=
 SECRET_KEY=
 ```
 
+Activate the environment
+```sh
+poetry shell
+```
+
 ### Run Django
 ```sh
 python3 manage.py migrate
