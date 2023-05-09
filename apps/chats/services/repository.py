@@ -27,3 +27,7 @@ def bulk_create_messages(messages: tuple[tuple, ...]) -> None:
             )
         )
     Message.objects.bulk_create(message_instances)
+
+
+def check_user_has_chat(user_id: str, chat_id: str) -> bool:
+    return Chat.objects.filter(id=chat_id, owner_id=user_id).exists()

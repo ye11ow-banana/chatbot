@@ -3,6 +3,7 @@ from typing import Any
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView
 
+from .permissions import ChatOwnerRequired
 from .services import repository
 from .models import Chat, Message
 
@@ -13,7 +14,7 @@ class ChatListView(LoginRequiredMixin, ListView):
     template_name = "chats/chat_list.html"
 
 
-class ChatMessagesView(LoginRequiredMixin, ListView):
+class ChatMessagesView(LoginRequiredMixin, ChatOwnerRequired, ListView):
     template_name = "chats/chat.html"
     context_object_name = "messages"
 
