@@ -131,4 +131,4 @@ dump.rdb
 .DS_Store
 
 # Chroma
-.chroma
+chroma_db

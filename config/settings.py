@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "debug_toolbar",
+    "channels",
 
     "chats",
 ]
@@ -99,3 +100,5 @@ STATICFILES_DIRS = [
 ]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CHROMADB_DIR = BASE_DIR / "chroma_db"

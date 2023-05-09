@@ -12,8 +12,8 @@ django = "^4.2.1"
 openai = "^0.27.6"
 python-decouple = "^3.8"
 django-debug-toolbar = "^4.0.0"
-channels = "^4.0.0"
 chromadb = "^0.3.21"
+channels = "3.0.5"
 
 
 [tool.poetry.group.dev.dependencies]
