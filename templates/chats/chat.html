@@ -31,5 +31,8 @@
     <button>Send</button>
   </div>
 </div>
+{{ chat_pk|json_script:"chat-pk" }}
+{{ request.user.username|json_script:"senderUsername" }}
+<script src="{% static 'src/chat.js' %}"></script>
 </body>
 </html>

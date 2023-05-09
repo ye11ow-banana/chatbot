@@ -15,8 +15,9 @@ body {
   flex-direction: column;
 }
 .chat {
-  width: auto;
-  height: 50%;
+  max-width: 50%;
+  height: 450px;
+  overflow-y: scroll;
 }
 .msg {
   padding: 10px;
