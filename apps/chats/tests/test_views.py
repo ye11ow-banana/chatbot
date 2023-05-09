@@ -83,7 +83,8 @@ class ChatMessagesViewTest(TestCase):
 
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, "chats/chat.html")
-        self.assertEquals(response.context["chat"], self.chat)
+        self.assertEquals(response.context["chat_title"], self.chat.title)
+        self.assertEquals(response.context["chat_pk"], self.chat.id)
         self.assertEquals(len(response.context["messages"]), 2)
         self.assertEquals(response.context["messages"][0], self.message1)
         self.assertEquals(response.context["messages"][1], self.message2)
